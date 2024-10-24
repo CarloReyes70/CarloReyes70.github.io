@@ -6,9 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon">
     <title>FÍSICA</title>
-    <link rel="stylesheet" href="css/styles.css">
+    
     
 </head>
+    <style> 
+        body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f4f7;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    border: 3px solid #1e90ff;
+    transition: transform 0.3s ease;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+h1 {
+    text-align: center;
+    color: #ff6347;
+    font-size: 36px;
+    margin-bottom: 30px;
+    font-family: 'Verdana', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: transform 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    color: #1e90ff;
+}
+
+.image {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin: 15px 0 5px;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+select, input, button {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font-size: 18px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus, input:focus, button:focus {
+    border-color: #ff6347;
+    box-shadow: 0 4px 20px rgba(255, 99, 71, 0.4);
+    outline: none;
+}
+
+button {
+    background-color: #ff6347;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff4500;
+    transform: scale(1.05);
+}
+
+#result {
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    text-align: center;
+    color: #ff6347;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Media queries */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    h1 {
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 901px) {
+    h1 {
+        font-size: 36px;
+    }
+}
+    </style>
 <body>
     <div class="container">
         <h1>Calc Physics</h1>
